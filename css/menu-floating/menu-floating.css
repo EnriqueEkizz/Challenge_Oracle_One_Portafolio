@@ -1,0 +1,108 @@
+#menu-floating{
+    position: fixed;
+    right: 15%;
+    bottom: 10%;
+}
+
+.menu__list{
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.menu__list__item{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    transition: all 400ms ease;
+    margin: 0rem;
+    padding-right: 0.9rem;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+}
+
+.menu__item__title{
+    background-color: #212121;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.menu__item__title a{
+    color: white;
+}
+
+.menu__item__icon{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 0.75rem;
+    margin-left: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5) !important;
+}
+
+/* Estilo boton abrir menu*/
+.menu__list__item-openMenu {
+    display: flex;
+    justify-content: end;
+    margin-top: 0.3rem;
+    padding-right: 0.75rem;
+}
+
+/* Estilo mostrar menu flotante */
+.menu__list__show{
+    height: auto;
+}
+
+.menu__list__show > .menu__list__item{
+    margin: .275rem 0rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.menu__button{
+    border-radius: 50% !important;
+    padding: 0.9rem !important;
+    background-color: #F57C00;
+    /*box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5) !important;*/
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 400ms ease;
+    transform: rotate(0deg);
+}
+
+.menu__button:hover{
+    background-color: #FF9800;
+}
+
+.menu__check{
+    display: none;
+}
+
+.menu__check:checked + .menu__button{
+    transform: rotate(135deg);
+}
+
+@media(min-width: 320px) {
+    #menu-floating{
+        right: 7.5%;
+        bottom: 4%;        
+    }
+}
+@media(min-width: 768px) {
+    #menu-floating{
+        right: 6%;
+        bottom: 4%;        
+    }
+}
+@media(min-width: 900px) {
+    #menu-floating{
+        display: none;       
+    }
+}

@@ -1,0 +1,25 @@
+.contact{
+    display: flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contact__title{
+    font-weight: bold;
+    font-size: 1.35rem;
+}
+
+.contact__div{
+    flex: 1;
+    overflow: hidden;
+}
+
+.contact__div:nth-child(1){
+    display: none;
+    justify-content: center;
+}
+.contact__div img{
+    height: 100%;
+    width: auto;
+}
+

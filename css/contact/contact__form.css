@@ -1,0 +1,28 @@
+.contact__form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__form__label{
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-bottom: 1.75rem;
+}
+
+.contact__form__label span{
+    position: absolute;
+    font-size: 1rem;
+    top: 50%;
+    left: .75rem;
+    transition: 0.25s;
+}
+
+@media(min-width: 900px) {
+    .contact__div:nth-child(1){
+        display: flex;
+    }
+    .contact__div:nth-child(2){
+        padding: 2rem;
+    }
+}

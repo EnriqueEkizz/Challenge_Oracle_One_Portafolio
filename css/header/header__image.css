@@ -1,0 +1,37 @@
+.header__frame{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__details{
+    flex: 1;
+}
+
+.header__image{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header__image img{
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .header__image{
+        /*width: 35%;*/
+        width: 200px;
+        height: 200px;
+        /*justify-content: end;*/
+    }
+    /*.header__image img{
+        width: 80%;
+        width: 100%;
+        height: auto;
+    }*/
+}

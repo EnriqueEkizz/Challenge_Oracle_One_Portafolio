@@ -1,0 +1,44 @@
+.experience__title{
+    font-weight: bold;
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+.experience__box{
+    margin-bottom: 2rem;
+}
+
+.experience__box img{
+    width: 100%;
+    height: auto;
+}
+
+.experience__box__titles{
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__box__titles span:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.experience__box__actions{
+    padding-top: 0.85rem;
+}
+
+@media(min-width: 900px) {
+    .experience__box{
+        display: flex;
+        flex-direction: row;
+    }
+    .experience__box__content{
+        padding: 1.5rem;
+    }
+    .experience__box img{
+        width: 66.66%;
+    }
+    .experience__box:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+}

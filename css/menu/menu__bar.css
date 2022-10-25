@@ -1,0 +1,22 @@
+.menu__bar{
+    display: flex;
+    align-items: center;
+}
+.menu__bar__list{
+    display: none;
+}
+.menu__bar__item{
+    padding: 0 0.5rem;
+    font-size: 0.95rem;
+}
+.menu__bar__extra{
+    padding: 0 0.5rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+@media (min-width: 900px) {
+    .menu__bar__list{
+        display: flex;
+    }
+}
